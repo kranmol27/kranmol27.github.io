@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anmol Kumar | Research</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home_style.css"/>
+  <link rel="stylesheet" href="research_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+<body>
+  <header id="main-header">
+    <h1>research</h1>
+    <span class="header-location">
+    <i class="fas fa-map-marker-alt"></i> <em>St Andrews, May 2024</em> 
+  </span>
+    <nav class="header-nav">
+  <a href="index.html">About</a>
+  <a href="cv.html">CV</a>
+  <a href="research.html">Research</a>
+  <a href="talks.html"> Talks</a>
+</nav>
+  </header>
+
+  <main>
+    This page is dedicated to highlight some of my recent research. The goal (and the challenge for me) is to make the findings accessible to as many people as possible. I shall therefore aim not to use technical terms to provide plain language summaries of our findings.
+
+  <div class="nugget">
+  <div class="nugget-header">
+    <h2>Wave Interference and Energy Trapping in the Solar Atmosphere</h2>
+    <button class="toggle-btn" onclick="toggleContent(this)">&#9650;</button>
+  </div>
+  <div class="nugget-content">
+    <div class="nugget-figure nugget-figure-left" style=width:35%;">
+      <img src="Photos/Research_figures/Single_wave_sim_vs_analytical_winds.jpg" alt="Reflection vs scales">
+      <div class="nugget-caption">
+        Amount of reflected energy for a wave encountering a region of density enhancements of different widths.
+      </div>
+    </div>
+
+    <p>
+      The Sun's atmosphere hides within itself several mysteries that have baffled scientists for decades. Two such problems essentially involve energy imbalance. Despite the solar interior being the source of all energy in the heliosphere, the plasma surrouding it appears to be hotter than it should be. Moreover, the plasma that fills the heliosphere &ndash; called the solar wind &ndash; appears to travel faster despite the Sun's strong gravitational pull. Such observations suggest that there could be an <em>invisible</em> energy source/energy conversion mechanism that powers the solar atmosphere. One of the leading theories for the energisation of the solar atmosphere is by magnetohydrodynamic waves, which are known to efficiently transport energy to large distances. It is likely that these waves are trapped in at appropriate locations where they can dissipate and transfer their energy to the surrounding plasma This work details the conditions at which efficient wave reflections &ndash; from imposed density variations &ndash; and therefore wave energy trapping can take place, in terms of the different length scales in the system &ndash; wavelength $ \lambda_d $ and the density variation length scale $ \lambda_s $.
+    </p>
+
+
+    <div class="nugget-figure nugget-figure-right" style="width:30%;">
+      <img src="Photos/Research_figures/E_ref_Vs_Num_Blobs_W30_09.jpg" alt="Reflection vs scales">
+      <div class="nugget-caption">
+        Reflected energy for varying number of density enhancements in the domain.
+      </div>
+    </div>
+
+    <p>
+      Although waves can reflect (continuously) from any kind of background density variation (This is generally true for any kind of waves when the background properties, often a function of the density, vary in space), there appears a favourable length scale at which wave reflections maximise. This condition is met when the density structuring length scale is approximately half the wavelength of incident wave ($\lambda_s = \lambda_d/2$). The reason this scale selectivity occurs is due to a way in which waves add up &ndash; called wave interference. Waves do not add up like numbers, rather, their relative offset (called the phase) also plays a significant role. If two waves are completely in phase, then their sum is a bigger wave (with a doubled amplitude &ndash; four times higher energy); however, if two waves are completely out of phase, the resultant wave energy becomes zero. In other words, if there is no wave at all, it might be possible that there are two individual components that fully cancel each other! It is therefore reflected waves from different locations in a region with density variations interfere constructively or destructively to give yield the resultant reflected wave; the amount of interference depends on the locations from where these reflected waves originate, and therefore on the spatial scale of these background density variations.
+    </p>
+
+    <p>
+      We would generally expect the amount of reflections to increase as the number of density enhancement regions increase. However, that is not the case when wave interference effects become important. Although an initial increase in the number of density enhancements does increase the net reflected energy, but it also imparts an offset (phase difference) that determines whether the reflected waves interfere constructively or not. It is only after a finite number of density enhancements that the waves start interfering destructively and we see a decrease in the net reflected energy. 
+      </p>
+      <p>
+      More details about this work could be found <a href="https://doi.org/10.1093/mnras/staf1189" target="_blank">here</a>.
+    </p>
+
+  </div>
+</div>
+
+  <script>
+    function toggleContent(btn) {
+      const content = btn.parentElement.nextElementSibling;
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        btn.innerHTML = "&#9650;"; // Up arrow
+      } else {
+        content.style.display = "none";
+        btn.innerHTML = "&#9660;"; // Down arrow
+      }
+    }
+  </script>
+  </main>
+
+  <!-- <hr class="footer-divider"> -->
+  <div id="footer-placeholder"></div>
+  <script src="loadComponents.js"></script>
+</body>
+</html>

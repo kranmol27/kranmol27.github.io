@@ -1,0 +1,94 @@
+header {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("Photos/talk.JPG");
+  background-size:cover;
+  background-position: 100% 67%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+  height: 250px;                  
+  overflow: hidden;
+  font-weight: bold;
+  font-family: monospace;
+  position: relative;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+.header-location {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #fff;
+  background: transparent;
+  padding: 0%;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: right;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-location i {
+  color: red;
+  margin-right: 0.6em;
+}
+
+.talk-location i{
+    color: red;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 0px;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 1em;
+  padding-left: 20px;
+  min-height: 40px;
+}
+
+.timeline-type {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 12px;
+  margin-bottom: 4px;
+  margin-right: 0;
+}
+
+.timeline-type.talk {
+  /* background: #ff7043; */
+  background: rgba(255, 112, 67, 0.9);
+  color: white
+}
+
+.timeline-type.poster {
+  background: rgba(67, 160, 71, 0.9);
+  color: white;
+}
+
+.timeline-type.seminar{
+  background: rgba(25, 118, 210, 0.9);
+  color: white;
+}
+
+.talk-title {
+  font-size:1.1em;
+  font-weight: bold;
+}

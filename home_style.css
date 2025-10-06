@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("Photos/Cover_bg.jpg");
+  background-size:cover;
+  background-position: 100% 55%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 8px;
+  height: 250px;                  
+  overflow: hidden;
+  font-weight: bold;
+  font-family: monospace;
+  position: relative;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+.header-location {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #fff;
+  background: transparent;
+  padding: 0%;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: right;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-location i {
+  color: red; /* Red for location icon */
+  margin-right: 0.6em;
+}
+
+.profile-container {
+  display:flex;
+  align-items: flex-start;
+  gap: 2em;
+  margin: 20px 0px;
+}
+
+.profile-photo {
+  width: 400px;
+  height: 400px;
+  object-fit:cover;
+  margin-top: 20px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
